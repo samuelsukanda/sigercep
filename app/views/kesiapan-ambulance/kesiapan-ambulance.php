@@ -678,6 +678,8 @@ include('../../access.php')
     <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- Sweat Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
     <!-- Page specific script -->
     <script src="../../dist/js/script.js"></script>
     <script src="../../dist/js/script-ambulance.js"></script>
