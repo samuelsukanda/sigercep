@@ -681,6 +681,7 @@ include('../../access.php')
     <!-- Page specific script -->
     <script src="../../dist/js/script.js"></script>
     <script src="../../dist/js/script-ambulance.js"></script>
+    <script src="../../dist/js/validasi-form2.js"></script>
 </body>
 
 </html>

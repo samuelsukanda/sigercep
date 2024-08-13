@@ -702,6 +702,7 @@ $data = mysqli_fetch_assoc($result);
     <!-- Page specific script -->
     <script src="../../dist/js/script.js"></script>
     <script src="../../dist/js/script-ambulance.js"></script>
+    <script src="../../dist/js/validasi-ambulance.js"></script>
 </body>
 
 </html>
