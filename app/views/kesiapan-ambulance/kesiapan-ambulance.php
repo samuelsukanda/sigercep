@@ -373,7 +373,7 @@ include('../../access.php')
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
-                                <form method="POST" action="proses-kesiapan-ambulance.php" enctype="multipart/form-data">
+                                <form id="form" method="POST" action="proses-kesiapan-ambulance.php" enctype="multipart/form-data">
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="mobil_ambulance">Mobil Ambulance:</label><br>
