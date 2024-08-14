@@ -49,6 +49,8 @@ include('../../access.php')
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
     <link rel="stylesheet" href="../../../vendor/autoload.php">
+    <!-- Sweat Alert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
 
     <style>
         .signature {
@@ -402,7 +404,7 @@ include('../../access.php')
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
-                                <form method="POST" action="proses-hardware.php">
+                                <form id="form" method="POST" action="proses-hardware.php">
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="nama">Nama Pengguna Komputer:</label>
@@ -730,9 +732,12 @@ include('../../access.php')
     <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- Sweat Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
     <!-- Page specific script -->
     <script src="../../dist/js/script.js"></script>
     <script src="../../dist/js/script-desain.js"></script>
+    <script src="../../dist/js/validasi-form2.js"></script>
 
     <script>
         document.getElementById('checkAll').onclick = function() {

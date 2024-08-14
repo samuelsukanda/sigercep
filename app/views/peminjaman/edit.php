@@ -47,6 +47,8 @@ include('../../access.php')
     <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- Sweat Alert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <!-- Signature -->
     <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
@@ -388,7 +390,7 @@ $data = mysqli_fetch_assoc($result);
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
-                                <form method="POST" action="proses-edit.php" enctype="multipart/form-data">
+                                <form id="form" method="POST" action="proses-edit.php" enctype="multipart/form-data">
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="nama">Nama:</label>
@@ -542,9 +544,12 @@ $data = mysqli_fetch_assoc($result);
     <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- Sweat Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
     <!-- Page specific script -->
     <script src="../../dist/js/script.js"></script>
     <script src="../../dist/js/signature.js"></script>
+    <script src="../../dist/js/validasi-peminjaman.js"></script>
 </body>
 
 </html>

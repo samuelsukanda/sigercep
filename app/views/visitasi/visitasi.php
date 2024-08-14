@@ -360,7 +360,7 @@ include('../../access.php')
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
-                                <form method="POST" action="proses-visitasi.php" enctype="multipart/form-data" onsubmit="return validateFile()">
+                                <form id="form" method="POST" action="proses-visitasi.php" enctype="multipart/form-data" onsubmit="return validateFile()">
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="nama">Nama:</label>
@@ -444,6 +444,7 @@ include('../../access.php')
     <!-- Page specific script -->
     <script src="../../dist/js/script.js"></script>
     <script src="../../dist/js/name-file.js"></script>
+    <script src="../../dist/js/validasi-form.js"></script>
 </body>
 
 </html>

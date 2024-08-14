@@ -47,6 +47,8 @@ include('../../access.php')
     <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- Sweat Alert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <!-- Signature -->
     <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
@@ -388,7 +390,7 @@ $data = mysqli_fetch_assoc($result);
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
-                                <form method="POST" action="proses-edit.php" enctype="multipart/form-data">
+                                <form id="form" method="POST" action="proses-edit.php" enctype="multipart/form-data">
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="nama">Nama:</label>
@@ -429,29 +431,6 @@ $data = mysqli_fetch_assoc($result);
                                                 <input type="file" class="custom-file-input" id="foto" name="foto" accept="image/jpeg,image/jpg,image/png">
                                                 <label class="custom-file-label" for="customFile" id="foto" name="foto">Choose file</label>
                                             </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="status">Status:</label>
-                                            <select class="form-control select2bs4" id="status" name="status">
-                                                <option selected disabled>Pilih Status</option>
-                                                <?php
-                                                $status = $data['status'];
-                                                $statusOptions = array(
-                                                    "On Progress",
-                                                    "Done",
-                                                );
-                                                foreach ($statusOptions as $option) {
-                                                    $selected = ($status == $option) ? 'selected' : '';
-                                                    echo "<option value=\"$option\" $selected>$option</option>";
-                                                }
-                                                ?>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="keterangan">Keterangan:</label>
-                                            <textarea class="form-control" id="keterangan" name="keterangan" rows="3"><?php echo $data['keterangan']; ?></textarea>
                                         </div>
 
                                         <!-- /.card-body -->
@@ -499,9 +478,12 @@ $data = mysqli_fetch_assoc($result);
     <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- Sweat Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
     <!-- Page specific script -->
     <script src="../../dist/js/script.js"></script>
     <script src="../../dist/js/name-file.js"></script>
+    <script src="../../dist/js/validasi-visitasi.js"></script>
 </body>
 
 </html>
