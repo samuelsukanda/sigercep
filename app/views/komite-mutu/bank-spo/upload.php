@@ -360,10 +360,10 @@ include('../../../access.php')
                                                 <i class="fas fa-upload"></i> Pilih file PDF
                                             </label>
                                             <input type="file" name="pdf_file" id="pdf_file" accept=".pdf">
-                                            <label for="upload" class="btn btn-app">
+                                            <label for="uploadButton" class="btn btn-app">
                                                 <i class="fas fa-paper-plane"></i>Upload
                                             </label>
-                                            <button name="upload" id="upload" type="submit">Upload</button>
+                                            <button name="uploadButton" id="uploadButton" type="submit">Upload</button>
                                             <input type="hidden" name="upload_destination" value="">
                                         </div>
 
@@ -393,7 +393,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="akuntansi" value="on">
+                                                                <input type="checkbox" class="checkItem" name="akuntansi" value="on">
                                                                 Akuntansi
                                                             </label>
                                                         </div>
@@ -401,7 +401,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="asuhan_mutu" value="on">
+                                                                <input type="checkbox" class="checkItem" name="asuhan_mutu" value="on">
                                                                 Asuhan Mutu
                                                             </label>
                                                         </div>
@@ -409,7 +409,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="casemix" value="on">
+                                                                <input type="checkbox" class="checkItem" name="casemix" value="on">
                                                                 Casemix
                                                             </label>
                                                         </div>
@@ -417,7 +417,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="cssd" value="on">
+                                                                <input type="checkbox" class="checkItem" name="cssd" value="on">
                                                                 IBS/CSSD
                                                             </label>
                                                         </div>
@@ -425,7 +425,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="dept_jangmed" value="on">
+                                                                <input type="checkbox" class="checkItem" name="dept_jangmed" value="on">
                                                                 Dept.Penunjang Medis
                                                             </label>
                                                         </div>
@@ -435,7 +435,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="dept_sdm_hukum" value="on">
+                                                                <input type="checkbox" class="checkItem" name="dept_sdm_hukum" value="on">
                                                                 Dept.SDM & Hukum
                                                             </label>
                                                         </div>
@@ -443,7 +443,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="dept_yanmed" value="on">
+                                                                <input type="checkbox" class="checkItem" name="dept_yanmed" value="on">
                                                                 Dept.Pelayanan Medis
                                                             </label>
                                                         </div>
@@ -451,7 +451,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="farmasi" value="on">
+                                                                <input type="checkbox" class="checkItem" name="farmasi" value="on">
                                                                 Farmasi
                                                             </label>
                                                         </div>
@@ -459,7 +459,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="gizi" value="on">
+                                                                <input type="checkbox" class="checkItem" name="gizi" value="on">
                                                                 Gizi
                                                             </label>
                                                         </div>
@@ -467,7 +467,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="hemodialisa" value="on">
+                                                                <input type="checkbox" class="checkItem" name="hemodialisa" value="on">
                                                                 Hemodialisa
                                                             </label>
                                                         </div>
@@ -477,7 +477,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="igd" value="on">
+                                                                <input type="checkbox" class="checkItem" name="igd" value="on">
                                                                 IGD
                                                             </label>
                                                         </div>
@@ -485,7 +485,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="ipsrs" value="on">
+                                                                <input type="checkbox" class="checkItem" name="ipsrs" value="on">
                                                                 IPSRS
                                                             </label>
                                                         </div>
@@ -493,7 +493,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="keuangan" value="on">
+                                                                <input type="checkbox" class="checkItem" name="keuangan" value="on">
                                                                 Keuangan
                                                             </label>
                                                         </div>
@@ -501,7 +501,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="komite_hukum" value="on">
+                                                                <input type="checkbox" class="checkItem" name="komite_hukum" value="on">
                                                                 Komite Etik & Hukum
                                                             </label>
                                                         </div>
@@ -509,7 +509,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="komite_keperawatan" value="on">
+                                                                <input type="checkbox" class="checkItem" name="komite_keperawatan" value="on">
                                                                 Komite Keperawatan
                                                             </label>
                                                         </div>
@@ -519,7 +519,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="komite_medik" value="on">
+                                                                <input type="checkbox" class="checkItem" name="komite_medik" value="on">
                                                                 Komite Medik
                                                             </label>
                                                         </div>
@@ -527,7 +527,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="komite_mutu" value="on">
+                                                                <input type="checkbox" class="checkItem" name="komite_mutu" value="on">
                                                                 Komite Mutu
                                                             </label>
                                                         </div>
@@ -535,7 +535,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="komite_ppi" value="on">
+                                                                <input type="checkbox" class="checkItem" name="komite_ppi" value="on">
                                                                 Komite PPI
                                                             </label>
                                                         </div>
@@ -543,7 +543,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="komite_ppra" value="on">
+                                                                <input type="checkbox" class="checkItem" name="komite_ppra" value="on">
                                                                 Komite PPRA
                                                             </label>
                                                         </div>
@@ -551,7 +551,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="laboratorium" value="on">
+                                                                <input type="checkbox" class="checkItem" name="laboratorium" value="on">
                                                                 Laboratorium
                                                             </label>
                                                         </div>
@@ -561,7 +561,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="layanan_pelanggan" value="on">
+                                                                <input type="checkbox" class="checkItem" name="layanan_pelanggan" value="on">
                                                                 Layanan Pelanggan
                                                             </label>
                                                         </div>
@@ -569,7 +569,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="logistik_pengembangan" value="on">
+                                                                <input type="checkbox" class="checkItem" name="logistik_pengembangan" value="on">
                                                                 Logistik & Pengembangan
                                                             </label>
                                                         </div>
@@ -577,7 +577,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="pemasaran" value="on">
+                                                                <input type="checkbox" class="checkItem" name="pemasaran" value="on">
                                                                 Pemasaran
                                                             </label>
                                                         </div>
@@ -585,7 +585,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="pengadaan_aset" value="on">
+                                                                <input type="checkbox" class="checkItem" name="pengadaan_aset" value="on">
                                                                 Pengadaan & Aset
                                                             </label>
                                                         </div>
@@ -593,7 +593,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="pengendali_lapangan" value="on">
+                                                                <input type="checkbox" class="checkItem" name="pengendali_lapangan" value="on">
                                                                 Pengendali Lapangan
                                                             </label>
                                                         </div>
@@ -603,7 +603,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="radiologi" value="on">
+                                                                <input type="checkbox" class="checkItem" name="radiologi" value="on">
                                                                 Radiologi
                                                             </label>
                                                         </div>
@@ -611,7 +611,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="rawat_inap" value="on">
+                                                                <input type="checkbox" class="checkItem" name="rawat_inap" value="on">
                                                                 Rawat Inap
                                                             </label>
                                                         </div>
@@ -619,7 +619,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="rawat_jalan" value="on">
+                                                                <input type="checkbox" class="checkItem" name="rawat_jalan" value="on">
                                                                 Rawat Jalan
                                                             </label>
                                                         </div>
@@ -627,7 +627,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="rehab_medik" value="on">
+                                                                <input type="checkbox" class="checkItem" name="rehab_medik" value="on">
                                                                 Rehab Medik
                                                             </label>
                                                         </div>
@@ -635,7 +635,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="rekam_medis" value="on">
+                                                                <input type="checkbox" class="checkItem" name="rekam_medis" value="on">
                                                                 Rekam Medis
                                                             </label>
                                                         </div>
@@ -645,7 +645,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="ruang_bersalin" value="on">
+                                                                <input type="checkbox" class="checkItem" name="ruang_bersalin" value="on">
                                                                 Ruang Bersalin
                                                             </label>
                                                         </div>
@@ -653,7 +653,7 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="ruang_intensif" value="on">
+                                                                <input type="checkbox" class="checkItem" name="ruang_intensif" value="on">
                                                                 Ruang Intensif
                                                             </label>
                                                         </div>
@@ -661,8 +661,20 @@ include('../../../access.php')
                                                     <td>
                                                         <div class="btn-group">
                                                             <label>
-                                                                <input type="checkbox" name="teknologi_informasi" value="on">
+                                                                <input type="checkbox" class="checkItem" name="teknologi_informasi" value="on">
                                                                 Teknologi Informasi
+                                                            </label>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-group mt-2 ml-5">
+                                                            <label>
+                                                                <input type="checkbox" id="checkAll" class="checkall">
+                                                                Check All
                                                             </label>
                                                         </div>
                                                     </td>
@@ -706,14 +718,6 @@ include('../../../access.php')
     <!-- Page specific script -->
     <script src="../../../dist/js/script.js"></script>
     <script src="../../../dist/js/upload-spo.js"></script>
-
-    <script>
-        document.getElementById("pdf_file").addEventListener("change", function() {
-            var fileName = this.value.split("\\").pop();
-            var fileDisplay = document.getElementById("file-name");
-            fileDisplay.textContent = fileName;
-        });
-    </script>
 </body>
 
 </html>
