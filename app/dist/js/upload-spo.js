@@ -6,12 +6,12 @@ document.getElementById("pdf_file").addEventListener("change", function () {
 });
 // PDF Name Code
 
-// Check ALl Code
+// Check All Code
 document.getElementById("checkAll").addEventListener("change", function () {
   var checkboxes = document.querySelectorAll(".checkItem");
   checkboxes.forEach((checkbox) => (checkbox.checked = this.checked));
 });
-// Check ALl Code
+// Check All Code
 
 // Validate Code
 document.getElementById("uploadButton").addEventListener("click", function () {
