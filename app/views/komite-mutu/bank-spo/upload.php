@@ -706,14 +706,6 @@ include('../../../access.php')
     <!-- Page specific script -->
     <script src="../../../dist/js/script.js"></script>
     <script src="../../../dist/js/upload-spo.js"></script>
-
-    <script>
-        document.getElementById("pdf_file").addEventListener("change", function() {
-            var fileName = this.value.split("\\").pop();
-            var fileDisplay = document.getElementById("file-name");
-            fileDisplay.textContent = fileName;
-        });
-    </script>
 </body>
 
 </html>
