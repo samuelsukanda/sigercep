@@ -4,14 +4,23 @@
     // Inject styles to override global button style issues with SweetAlert
     const swalStyle = document.createElement('style');
     swalStyle.innerHTML = `
-      .swal2-container .swal2-styled.swal2-confirm {
+      .swal2-container .swal2-styled.swal2-confirm:not(.btn-swal-success) {
         background-color: #ef4444 !important;
         color: #ffffff !important;
         border: none !important;
         transition: background-color 0.2s !important;
       }
-      .swal2-container .swal2-styled.swal2-confirm:hover {
+      .swal2-container .swal2-styled.swal2-confirm:not(.btn-swal-success):hover {
         background-color: #dc2626 !important;
+      }
+      .swal2-container .btn-swal-success {
+        background-color: var(--accent) !important;
+        color: #ffffff !important;
+        border: none !important;
+        transition: background-color 0.2s !important;
+      }
+      .swal2-container .btn-swal-success:hover {
+        filter: brightness(1.2) !important;
       }
       .swal2-container .swal2-styled.swal2-cancel {
         background-color: #6b7280 !important;
